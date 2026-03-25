@@ -14,7 +14,7 @@ cd njord-lookup
 # Bygg og start
 docker compose up -d
 
-# Appen kjører nå på http://<server-ip>:5055
+# Appen kjører nå på http://<server-ip>:5088
 ```
 
 ### Unraid – Community Applications
@@ -25,7 +25,7 @@ Du kan også sette opp containeren manuelt i Unraid:
 | --------------- | ---------------------------- |
 | Repository      | Bygg fra lokal Dockerfile    |
 | Container Port  | `5000`                       |
-| Host Port       | `5055` (eller valgfritt)     |
+| Host Port       | `5088` (eller valgfritt)     |
 | Restart Policy  | Unless Stopped               |
 
 ## Oppdatere data
@@ -37,7 +37,7 @@ Utstyrsdata ligger i `data/equipment.json`. For å oppdatere:
 
 ## Cloudflare Tunnel
 
-For remote tilgang via Cloudflare Tunnel, legg til en ny public hostname som peker til `http://localhost:5055`.
+For remote tilgang via Cloudflare Tunnel, legg til en ny public hostname som peker til `http://localhost:5088`.
 
 ## Tailscale
 
