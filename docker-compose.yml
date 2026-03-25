@@ -1,0 +1,9 @@
+services:
+  njord-lookup:
+    build: .
+    container_name: njord-lookup
+    restart: unless-stopped
+    ports:
+      - "5055:5000"
+    environment:
+      - TZ=Europe/Oslo
